@@ -58,7 +58,7 @@
       // hide matching items
       // if we found matching items, then append a show link
       if (sum > 0) {
-        var html = 'Show Hidden (' + sum + ').',
+        var html = 'Show Hidden (' + sum + ')',
             el = document.createElement('button');
 
         // create show button
