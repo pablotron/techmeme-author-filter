@@ -30,9 +30,7 @@
       F.call(document.getElementsByTagName('cite'), function(el) {
         var str = el.innerHTML || '';
 
-        return res.length > 0 && res.some(function(re) { 
-          return str.match(re); 
-        });
+        return res.length && res.some(function(re) { return str.match(re); });
       }).forEach(function(el) {
         // walk up to containing div.item element and pass it to callback
         while (el && (el = el.parentNode)) {

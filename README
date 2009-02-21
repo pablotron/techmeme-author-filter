@@ -3,3 +3,27 @@ Techmeme Author Filter README
 
 Greasemonkey script to filter out unwanted authors' articles on
 techmeme.com.
+
+Usage
+=====
+Use the "Edit Author Filters" entry in the Greasemonkey menu to add
+one or more space-separated words to filter on.  For example, filtering
+on "billy smith" will hide articles by the following authors:
+
+  * Billy Jones
+  * Andrew Smith
+  * Joseph Smithson
+
+If you don't want the last author to match, then use something like this
+instead:
+
+    # only match on literal "billy" or literal "smith"
+    "billy \bsmith\b"
+
+You can use any other regular expression characters in the string as
+well.
+
+About the Author
+================
+Paul Duncan <pabs@pablotron.org>
+http://pablotron.org/
